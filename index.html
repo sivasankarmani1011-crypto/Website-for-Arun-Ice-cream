@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Ice Cream | Kallal, Sivagangai</title>
+  <meta name="description" content="Arun Ice Cream, Kallal. Serving the community for 15+ years with classic, mouth-watering artisan ice creams. Open daily 5:30 AM to 10:00 PM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="curtain"></div>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo"><span class="logo-icon">🍦</span> Arun <small>Ice Cream</small></a>
+    <nav class="links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#story" class="death-scroll-link">Our Story</a>
+      <a href="#flavors">Menu</a>
+      <a href="#about">About Us</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="auth-btn-nav" id="openAuthModalBtn">Login / Signup</button>
+      <button class="cart" aria-label="Cart">🛒<span class="badge" id="cartCount">0</span></button>
+      <button class="burger" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="blob b1" data-speed="0.15"></div>
+      <div class="blob b2" data-speed="-0.1"></div>
+      <div class="blob b3" data-speed="0.25"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="pill">🎉 15+ Years of Sweet Joy</span>
+          <h1>15 Years of <span>Sweet Memories</span> at Arun Ice Cream</h1>
+          <p>Handcrafted local favorites, rich sundaes, creamy milkshakes, and refreshing scoops served with love every day in Kallal.</p>
+          <div class="hero-btns">
+            <a href="#flavors" class="btn glow">Explore Menu →</a>
+            <button class="btn btn-outline" id="heroAuthBtn">Customer Login</button>
+          </div>
+        </div>
+        <div class="hero-visual" data-speed="-0.06">
+          <div class="hero-img" data-emoji="🍦">
+            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=800&q=70" alt="Colourful ice cream scoops" fetchpriority="high">
+          </div>
+          <div class="glass chip chip1">🍦 100% Creamy</div>
+          <div class="glass chip chip2">⭐ Local Favourite</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEATH SCROLL STORYTELLING SECTION -->
+    <section class="death-scroll-section" id="story">
+      <div class="container">
+        <div class="head reveal">
+          <span class="pill">The Journey</span>
+          <h2>The Death Scroll Experience</h2>
+          <p>Immerse yourself in our sweet legacy as you scroll through our story.</p>
+        </div>
+        
+        <div class="story-track">
+          <div class="story-step reveal" style="--d:0.1s">
+            <div class="story-number">01</div>
+            <div class="story-content glass">
+              <h3>Humble Beginnings</h3>
+              <p>Founded over 15 years ago right in the heart of Kallal, Arun Ice Cream started as a small neighborhood dream to bring smiles and sweet treats to every family.</p>
+            </div>
+          </div>
+
+          <div class="story-step reveal" style="--d:0.2s">
+            <div class="story-number">02</div>
+            <div class="story-content glass">
+              <h3>Crafting Pure Happiness</h3>
+              <p>From classic velvety Vanilla and rich Chocolate to our signature Butterscotch and Oreo Sundaes, every scoop is blended for ultimate mouth-watering perfection.</p>
+            </div>
+          </div>
+
+          <div class="story-step reveal" style="--d:0.3s">
+            <div class="story-number">03</div>
+            <div class="story-content glass">
+              <h3>Community & Tradition</h3>
+              <p>Open daily from early morning till late evening, we take pride in being Kallal's favorite destination for sweet celebrations and joyful gatherings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ICE CREAM PRODUCT CATALOG -->
+    <section class="section" id="flavors">
+      <div class="container">
+        <div class="head reveal">
+          <span class="pill">Our Menu</span>
+          <h2>Artisan Ice Cream Flavors & Treats</h2>
+          <p>Classic, popular, affordable neighborhood favorites crafted for pure delight.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card-img" data-emoji="🍨"><img loading="lazy" src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=600&q=70" alt="Classic Vanilla Scoop"><span class="glass tag">Scoop</span></div>
+            <div class="card-body"><h3>Classic Vanilla</h3><p>Smooth, creamy, and made with real vanilla bean essence.</p>
+              <div class="row"><span class="price">₹35</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+          <article class="card reveal" style="--d:.05s">
+            <div class="card-img" data-emoji="🍫"><img loading="lazy" src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=70" alt="Rich Chocolate Scoop"><span class="glass tag">Scoop</span></div>
+            <div class="card-body"><h3>Rich Chocolate</h3><p>Deep, decadent cocoa blended into ultra-smooth ice cream.</p>
+              <div class="row"><span class="price">₹40</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+          <article class="card reveal" style="--d:.1s">
+            <div class="card-img" data-emoji="🍓"><img loading="lazy" src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=600&q=70" alt="Strawberry Delight"><span class="glass tag">Scoop</span></div>
+            <div class="card-body"><h3>Strawberry Bliss</h3><p>Sweet summer strawberries swirled into creamy goodness.</p>
+              <div class="row"><span class="price">₹40</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+          <article class="card reveal" style="--d:.15s">
+            <div class="card-img" data-emoji="🍯"><img loading="lazy" src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=70" alt="Butterscotch Crunch"><span class="glass tag">Specialty</span></div>
+            <div class="card-body"><h3>Butterscotch Crunch</h3><p>Golden caramel butterscotch loaded with crunchy praline bits.</p>
+              <div class="row"><span class="price">₹50</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+          <article class="card reveal" style="--d:.2s">
+            <div class="card-img" data-emoji="🥭"><img loading="lazy" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=70" alt="Alphonso Mango"><span class="glass tag">Seasonal</span></div>
+            <div class="card-body"><h3>Alphonso Mango</h3><p>Tropical royal mango flavor capturing pure summer fruit bliss.</p>
+              <div class="row"><span class="price">₹45</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+          <article class="card reveal" style="--d:.25s">
+            <div class="card-img" data-emoji="🍪"><img loading="lazy" src="https://images.unsplash.com/photo-1560008511-11c63416e52d?auto=format&fit=crop&w=600&q=70" alt="Oreo Sundae"><span class="glass tag">Sundae</span></div>
+            <div class="card-body"><h3>Oreo Sundae</h3><p>Crushed chocolate cookies layered over soft serve with fudge.</p>
+              <div class="row"><span class="price">₹80</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+          <article class="card reveal" style="--d:.3s">
+            <div class="card-img" data-emoji="🥤"><img loading="lazy" src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=70" alt="Chocolate Milkshake"><span class="glass tag">Milkshake</span></div>
+            <div class="card-body"><h3>Thick Milkshake</h3><p>Blended ice cream topped with whipped cream and syrup.</p>
+              <div class="row"><span class="price">₹70</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+          <article class="card reveal" style="--d:.35s">
+            <div class="card-img" data-emoji="🍧"><img loading="lazy" src="https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=600&q=70" alt="Cassatta Slice"><span class="glass tag">Slice</span></div>
+            <div class="card-body"><h3>Cassatta Slice</h3><p>Traditional multi-layered sponge cake and ice cream slice.</p>
+              <div class="row"><span class="price">₹90</span><button class="add-btn">Add to Cart</button></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Without Picture) -->
+    <section class="section alt" id="about">
+      <div class="container" style="max-width: 800px; text-align: center;">
+        <div class="reveal" style="--d:.15s">
+          <span class="pill">Our Story</span>
+          <h2>About Arun Ice Cream</h2>
+          <p>For over <strong>15 years</strong>, Arun Ice Cream has been a beloved landmark of joy in Kallal. What began as a cozy corner shop has blossomed into the community's favorite spot for cool, refreshing treats.</p>
+          <p>We believe in quality ingredients, welcoming smiles, and affordable happiness for every single customer who walks through our doors.</p>
+          <div class="stats" style="justify-content: center;">
+            <div><b>15+</b><span>Years</span></div>
+            <div><b>100%</b><span>Pure Milk</span></div>
+            <div><b>50k+</b><span>Smiles Served</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT SECTION -->
+    <section class="section visit" id="visit">
+      <div class="blob b2" data-speed="0.1"></div>
+      <div class="container">
+        <div class="glass visit-card reveal">
+          <h2>Visit Us 📍</h2>
+          <ul>
+            <li><span>🏠</span><div><b>Address</b>Kamarajar Main Road, Kallal - 630305, Sivagangai Dist, Tamil Nadu</div></li>
+            <li><span>🏦</span><div><b>Landmark</b>Nearby State Bank</div></li>
+            <li><span>⏰</span><div><b>Store Hours</b>Open Daily, 5:30 AM to 10:00 PM</div></li>
+            <li><span>📞</span><div><b>Phone</b><a href="tel:+916381841262">+91 63818 41262</a></div></li>
+            <li><span>✉️</span><div><b>Email</b><a href="mailto:sivasankar10745@mountzion.ac.in">sivasankar10745@mountzion.ac.in</a></div></li>
+          </ul>
+          <a class="btn glow" href="https://maps.app.goo.gl/PswYVcHNQjtc4pH36" target="_blank" rel="noopener">Get Directions →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CUSTOMER LOGIN / SIGNUP MODAL -->
+  <div class="auth-modal-overlay" id="authModal">
+    <div class="auth-modal glass">
+      <button class="auth-close" id="closeAuthModalBtn">×</button>
+      <div class="auth-header">
+        <span class="logo-icon">🍦</span>
+        <h2>Welcome to Arun Ice Cream</h2>
+        <p>Login or create an account to save your favorite treats!</p>
+      </div>
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="login">Login</button>
+        <button class="auth-tab" data-tab="signup">Sign Up</button>
+      </div>
+      <form class="auth-form" id="authForm">
+        <div class="form-group signup-only" style="display: none;">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Sivasankar Manikandan">
+        </div>
+        <div class="form-group">
+          <label for="userEmail">Email Address</label>
+          <input type="email" id="userEmail" placeholder="sivasankar10745@mountzion.ac.in" required>
+        </div>
+        <div class="form-group">
+          <label for="userPass">Password</label>
+          <input type="password" id="userPass" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn glow auth-submit-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>🍦 <b>Arun Ice Cream</b> · Kallal, Sivagangai</p>
+    <p>© <span id="year"></span> All rights reserved. Contact: sivasankar10745@mountzion.ac.in</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
